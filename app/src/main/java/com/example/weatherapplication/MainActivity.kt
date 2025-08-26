@@ -82,7 +82,8 @@ class MainActivity : AppCompatActivity() {
                     val maxTemp = responseBody.main.temp_max
                     val minTemp = responseBody.main.temp_min
                     binding.temperatue.text = "$temperature °C"
-                  binding.conditions.text = condition
+                    binding.wind.text = condition
+                    //binding.conditions.text = condition
                     binding.max.text = "Max  Temp :$maxTemp °C"
                     binding.min.text = "Max  Temp :$minTemp °C"
                     binding.humidity.text = "$humidity %"
@@ -90,6 +91,9 @@ class MainActivity : AppCompatActivity() {
                     binding.sunrise.text = "${time(sunRise)}"
                     binding.sunset.text = "${time(sunSet)}"
                     binding.wind.text = "$windSpeed m/s"
+                    binding.Sea.text = "$windSpeed m/s"
+                    //binding.wind.text = condition
+                    binding.sunny.text = condition
                     binding.conditions.text = condition
                     //binding.pressure.text = "$seaLevel hPa"
                     binding.day.text =dayName(System.currentTimeMillis())
